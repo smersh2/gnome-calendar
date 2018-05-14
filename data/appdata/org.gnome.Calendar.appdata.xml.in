@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 Igor Gnatenko <ignatenko@src.gnome.org> -->
+<component type="desktop">
+  <id>org.gnome.Calendar.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Calendar</name>
+  <summary>Calendar for GNOME</summary>
+
+  <description>
+    <p>
+      GNOME Calendar is a simple and beautiful calendar application designed to perfectly fit the GNOME
+      desktop. By reusing the components which the GNOME desktop is build on, Calendar nicely integrates
+      with the GNOME ecosystem.
+    </p>
+    <p>
+      We aim to find the perfect balance between nicely crafted features and user-centred usability. No
+      excess, no lacks. You’ll feel comfortable using Calendar, like you’ve been using it for ages!
+    </p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image width="1200" height="675">https://git.gnome.org/browse/gnome-calendar/plain/data/appdata/default.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Week view</caption>
+      <image width="1200" height="675">https://git.gnome.org/browse/gnome-calendar/plain/data/appdata/management.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Search for events</caption>
+      <image width="1200" height="675">https://git.gnome.org/browse/gnome-calendar/plain/data/appdata/search.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Calendar management</caption>
+      <image width="1202" height="681">https://git.gnome.org/browse/gnome-calendar/plain/data/appdata/calendar-management.png</image>
+    </screenshot>
+  </screenshots>
+
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+  </kudos>
+
+  <url type="homepage">https://wiki.gnome.org/Apps/Calendar</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-calendar/issues</url>
+  <project_group>GNOME</project_group>
+
+  <releases>
+    <release date="2018-04-10" version="3.28.1">
+      <description>
+        <p>This release updates many translations.</p>
+      </description>
+    </release>
+
+    <release date="2018-03-12" version="3.28.0">
+      <description>
+        <p>The GNOME Calendar Team is proud to announce GNOME Calendar 3.28!</p>
+        <p>
+          This release bings many improvements to the Month view, weather forecast and big improvements to the
+          amount of memory consumed. Users with heavy calendars and hundreds of events will immediately notice
+          the difference in memory consumption.
+        </p>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2018-03-05" version="3.27.92">
+      <description>
+        <p>This is the release candidate version of the next big release of GNOME Calendar, and it brings a few Flatpak improvements.</p>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2018-02-12" version="3.27.90">
+      <description>
+        <p>This is the alpha version of the next big release of GNOME Calendar, and it brings the following new features and improvements:</p>
+        <ul>
+          <li>Big code refactorings that lead to more stability and ease of maintainership.</li>
+          <li>Follow-up improvements after rewritting the Month view.</li>
+          <li>The Flatpak Nightly builds of GNOME Calendar now have debugging and tracing enabled by default. This
+            will allow testers to report bugs with more precision.
+          </li>
+          <li>Huge memory leaks were also fixed.</li>
+        </ul>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-11-15" version="3.27.2">
+      <description>
+        <p>This release brings the following new features and improvements:</p>
+        <ul>
+          <li>Month view was rewritten, and received a substantial redesign.</li>
+          <li>Events were also redesigned. All-day events look different than timed events.</li>
+          <li>Improvements when adding calendars from files.</li>
+        </ul>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-08-11" version="3.25.90">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.25.90 release of
+          GNOME Calendar, the third release in the next (3.26) unstable series.
+        </p>
+        <p>This release brings the following new features and improvements:</p>
+        <ul>
+          <li>Add the options to add, modify and remove recurrences from events.</li>
+          <li>Improve Month view by greying out out-of-range days.</li>
+          <li>Completely move to the Meson build system. This allows building Calendar at least 3x faster.</li>
+        </ul>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-06-19" version="3.25.3">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.25.3 release of
+          GNOME Calendar, the first release in the next (3.26) unstable series.
+          This release brings the first steps to modify and delete recurrent
+          events, as well as many bugfixes.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-04-24" version="3.25.1">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.25.1 release of
+          GNOME Calendar, the first release in the next (3.26) unstable series.
+          This release contains most of the changes that landed for 3.24.1, plus
+          a few translation changes.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-04-24" version="3.24.1">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.24.1 release of
+          GNOME Calendar! This is a bugfix release that improves a lot the
+          performance and stability of GNOME Calendar.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-03-20" version="3.24.0">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.24 release of
+          GNOME Calendar! In this release, users will notice big changes,
+          with the inclusion of the new Week view, various improvements to
+          ranging from various bugfixes, improved keyboard flow for creating
+          events using the quick-add popover, cleanups and much more.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-03-16" version="3.23.92">
+      <description>
+        <p>
+          In this release, many bugs were fixed in the Week view. GNOME Calendar is
+          now freeze until the next stable release.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-02-28" version="3.23.91.1">
+      <description>
+        <p>
+          In this release, a couple of minor bugs were fixed. GNOME Calendar is
+          gaining stability fixes until the next stable release now.
+        </p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-02-27" version="3.23.91">
+      <description>
+        <p>
+          In this release, a couple of minor bugs were fixed. GNOME Calendar is
+          gaining stability fixes until the next stable release now.
+        </p>
+        <p>This release also updates translations, and adds new translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2017-02-14" version="3.23.90">
+      <description>
+        <p>
+          This release candidate for GNOME 3.24 adds many new features and improvements. The
+          major highlight is the new Week view, besides the many stability and bugs that
+          were fixed.
+          <ul>
+            <li>The new Week view is here!</li>
+            <li>GNOME Calendar now has an official Flatpak manifest</li>
+            <li>Keyboard interaction was improved</li>
+          </ul>
+        </p>
+        <p>
+          This release also updates translations, and adds new translations. GNOME Calendar
+          if officially supported on more then 50 languages now.
+        </p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+
+    <release date="2016-12-19" version="3.22.2">
+      <description>
+        <p>
+          This is the third stable release for GNOME Calendar 3.22, and focuses on
+          bugfixes and stability issues.
+          <ul>
+            <li>Online calendars are now downloaded offline and synchronized</li>
+            <li>Properly draw the current month after scrolling</li>
+            <li>Add an animation on the new month chooser widget</li>
+            <li>Correctly escape strings</li>
+            <li>Plug a memory leak</li>
+          </ul>
+        </p>
+        <p>This release also updates translations, and adds new translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+  </releases>
+
+  <update_contact>gbsneto@gnome.org</update_contact>
+  <translation type="gettext">gnome-calendar</translation>
+</component>

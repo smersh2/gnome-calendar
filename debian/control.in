@@ -1,0 +1,40 @@
+Source: gnome-calendar
+Section: gnome
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends: appstream-util,
+               debhelper (>= 11),
+               gnome-pkg-tools,
+               gsettings-desktop-schemas-dev (>= 3.21.2),
+               libdazzle-1.0-dev (>= 3.26.1),
+               libecal1.2-dev (>= 3.17.1),
+               libedataserver1.2-dev (>= 3.17.1),
+               libedataserverui1.2-dev (>= 3.17.1),
+               libgeoclue-2-dev (>= 2.4),
+               libgeocode-glib-dev (>= 3.23),
+               libglib2.0-dev (>= 2.43.4),
+               libgoa-1.0-dev (>= 3.2.0),
+               libgtk-3-dev (>= 3.22.20),
+               libgweather-3-dev (>= 3.27.2),
+               libical-dev (>= 1.0.1),
+               libsoup2.4-dev,
+               meson (>= 0.41.0),
+               pkg-config (>= 0.22)
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/gnome-team/gnome-calendar
+Vcs-Git: https://salsa.debian.org/gnome-team/gnome-calendar.git
+Homepage: https://wiki.gnome.org/Apps/Calendar
+
+Package: gnome-calendar
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         gsettings-desktop-schemas (>= 3.21.2)
+Recommends: evolution-data-server
+Description: Calendar application for GNOME
+ GNOME Calendar is a simple and beautiful calendar application designed
+ to perfectly fit the GNOME desktop. By reusing the components which the
+ GNOME desktop is build on, Calendar nicely integrates with the GNOME
+ ecosystem.

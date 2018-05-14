@@ -1,0 +1,272 @@
+gnome-calendar (3.28.1-1ubuntu2) bionic; urgency=medium
+
+  * debian/patches/0001-auto-disconnect-weather-changed-signal-handler.patch:
+    fix crash when closing gnome-calendar (LP: #1757058).
+
+ -- Andrea Azzarone <andrea.azzarone@canonical.com>  Mon, 16 Apr 2018 17:30:41 +0200
+
+gnome-calendar (3.28.1-1ubuntu1) bionic; urgency=medium
+
+  * Restore dh_translations override while waiting for bug 1762889
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Fri, 13 Apr 2018 14:04:28 -0400
+
+gnome-calendar (3.28.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.1.4
+  * debian/rules: drop obsolete dh_translations workaround
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 10 Apr 2018 19:29:56 -0400
+
+gnome-calendar (3.28.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/rules: drop buildsystem=meson, autotools has been removed
+
+ -- Tim Lunn <tim@feathertop.org>  Sat, 17 Mar 2018 12:08:44 +1100
+
+gnome-calendar (3.27.90-1) experimental; urgency=medium
+
+  * New upstream development release
+  * Add new Build-Depends: libdazzle-1.0-dev, libgeoclue-2-dev
+    libgeocode-glib-dev, libgweather-3-dev
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 12 Feb 2018 22:12:12 -0500
+
+gnome-calendar (3.26.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update Vcs fields for migration to https://salsa.debian.org/
+  * Bump debhelper compat to 11
+  * Drop libical3.patch: Applied in new release
+
+ -- Jeremy Bicha <jbicha@debian.org>  Fri, 02 Feb 2018 15:09:40 -0500
+
+gnome-calendar (3.26.2-3) unstable; urgency=medium
+
+  * Update Vcs fields for conversion to git
+  * Add debian/gbp.conf
+  * Bump Standards-Version to 4.1.2
+
+ -- Jeremy Bicha <jbicha@debian.org>  Thu, 14 Dec 2017 13:27:31 -0500
+
+gnome-calendar (3.26.2-2) unstable; urgency=medium
+
+  * Cherry-pick libical3.patch to fix build with libical 3 (Closes: #883936)
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 09 Dec 2017 14:45:14 -0500
+
+gnome-calendar (3.26.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.1.1
+
+ -- Jeremy Bicha <jbicha@debian.org>  Wed, 04 Oct 2017 20:16:39 -0400
+
+gnome-calendar (3.26.1-1) unstable; urgency=high
+
+  * New upstream release
+    - Fix UI only in English. Set urgency=high.
+
+ -- Jeremy Bicha <jbicha@debian.org>  Wed, 04 Oct 2017 15:58:43 -0400
+
+gnome-calendar (3.26.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/rules:
+    - Don't fail build for new failing test which requires installed
+      gsettings schemas
+    - Add workaround for Ubuntu translations issue
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 12 Sep 2017 11:22:48 -0400
+
+gnome-calendar (3.25.90-1) unstable; urgency=medium
+
+  * New upstream release
+  * Build with meson
+  * Bump Standards-Version to 4.0.1
+  * debian/control.in:
+    - Drop alternate recommends on evolution-data-server-online-accounts
+      (package was only in Ubuntu and is now obsolete)
+    - Build-depend on libsoup2.4-dev
+  * Drop all patches. They have either been applied in the new
+    upstream release or were for Ubuntu Online Accounts integration
+    which is no longer supported in Ubuntu.
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 28 Aug 2017 19:43:47 -0400
+
+gnome-calendar (3.22.4-2) unstable; urgency=medium
+
+  [ Jason Crain ]
+  * Add debian/patches/0003-set-edit-dialogs-event-to-NULL-after-saving.patch:
+    fix crash when creating a new event. (Closes: #858924)
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 30 May 2017 10:15:57 +0200
+
+gnome-calendar (3.22.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 29 Mar 2017 23:00:23 +0200
+
+gnome-calendar (3.22.3-1) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * debian/watch: Only watch for stable versions
+
+  [ Michael Biebl ]
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 28 Feb 2017 20:38:20 +0100
+
+gnome-calendar (3.22.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 20 Dec 2016 03:06:02 +0100
+
+gnome-calendar (3.22.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh debian/patches/0001-Hide-GOA-sources-on-Unity.patch.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2016 01:05:56 +0200
+
+gnome-calendar (3.22.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 19 Sep 2016 21:41:22 +0200
+
+gnome-calendar (3.21.92-1) unstable; urgency=medium
+
+  * New upstream development release.
+  * Drop debian/patches/0003-month-view-initialize-variable.patch, merged
+    upstream.
+  * Bump Build-Depends on libgtk-3-dev to (>= 3.21.6) as per configure.ac.
+  * Bump debhelper compat level to 10.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 15 Sep 2016 00:35:02 +0200
+
+gnome-calendar (3.21.91-2) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * debian/control.in:
+    - Replace build-dependency on gnome-common with autoconf-archive
+
+  [ Michael Biebl ]
+  * Initialize timespan variable. This avoids build failures with gcc which is
+    over-pessimistic and aborts the build due to -Werror=maybe-uninitialized.
+    Patch cherry-picked from upstream Git.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 01 Sep 2016 13:04:42 +0200
+
+gnome-calendar (3.21.91-1) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * debian/control.in:
+    - Update Vcs fields
+    - Depend on gnome-common (needed for autoreconf currently)
+  * Add debian/docs: Install NEWS
+  * 0002-Spawn-Ubuntu-s-credentials-panel-instead-of-the-GOA-.patch:
+    - Use latest version from Ubuntu packaging
+
+  [ Iain Lane ]
+  * New upstream release 3.21.91
+  * debian/control{,.in}:
+    + Bump BDs for 3.21.91
+    + Add BD on appstream-util, for APPSTREAM_XML m4 function
+    + Add a versioned dependency on the required gsettings-desktop-schemas
+  * debian/patches/000*: Refresh
+  * debian/watch: Track unstable versions
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 01 Sep 2016 02:24:19 +0200
+
+gnome-calendar (3.20.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+  * Bump Standards-Version to 3.9.8.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 17 May 2016 18:43:28 +0200
+
+gnome-calendar (3.20.1-2) unstable; urgency=medium
+
+  * debian/patches/0001-Hide-GOA-sources-on-Unity.patch: Fix Unity detection
+    for starting GOA.
+
+ -- Iain Lane <laney@debian.org>  Wed, 11 May 2016 13:19:06 +0100
+
+gnome-calendar (3.20.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop uploaders.mk from debian/rules as this breaks the clean target with
+    dh. Instead use the gnome dh addon which updates debian/control via
+    dh_gnome_clean.
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 17 Apr 2016 18:17:07 +0200
+
+gnome-calendar (3.19.92-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update unity patches to apply again:
+    - 0001-Hide-GOA-sources-on-Unity.patch
+    - 0002-Spawn-Ubuntu-s-credentials-panel-instead-of-the-GOA-.patch
+  * Bump gtk+ build-dependency to 3.19.12~
+    - uses new API, e.g. gtk_widget_class_set_css_name
+  * Bump Standards-Version to 3.9.7
+
+ -- Andreas Henriksson <andreas@fatal.se>  Thu, 17 Mar 2016 11:32:42 +0100
+
+gnome-calendar (3.18.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Thu, 17 Mar 2016 11:26:01 +0100
+
+gnome-calendar (3.18.2.1-2) unstable; urgency=medium
+
+  * Add a Recommends on evolution-data-server (or -online-accounts for the
+    benefit of Ubuntu) so that we have credential modules available.
+  * d/p/0001-Hide-GOA-sources-on-Unity.patch,
+    d/p/0002-Spawn-Ubuntu-s-credentials-panel-instead-of-the-GOA-.patch: Take
+    some patches from upstream bug #761259 to resolve some integration issues
+    in Unity. (LP: #1525861)
+
+ -- Iain Lane <laney@debian.org>  Fri, 12 Feb 2016 16:19:55 +0000
+
+gnome-calendar (3.18.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 04 Jan 2016 20:50:15 +0100
+
+gnome-calendar (3.18.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 23 Dec 2015 10:49:55 +0100
+
+gnome-calendar (3.18.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 17 Oct 2015 22:14:28 +0200
+
+gnome-calendar (3.18.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update build-dependencies according to configure.ac changes:
+    - bump evolution-data-server to >= 3.17.1
+    - add goa >= 3.2.0
+    - (already done: bump libical to >= 1.0)
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sun, 11 Oct 2015 12:05:06 +0200
+
+gnome-calendar (3.16.2-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 19 Aug 2015 19:36:17 +0200
