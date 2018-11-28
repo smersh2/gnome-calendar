@@ -1584,6 +1584,8 @@ gcal_window_init (GcalWindow *self)
   gcal_window_add_accelerator (app, "win.change-view(2)",    "<Ctrl>2");
   gcal_window_add_accelerator (app, "win.change-view(3)",    "<Ctrl>3");
   gcal_window_add_accelerator (app, "win.toggle-search-bar", "<Ctrl>f");
+
+  gtk_window_set_icon_name (self, "org.gnome.Calendar");
 }
 
 /**
