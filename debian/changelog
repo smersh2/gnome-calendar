@@ -1,8 +1,9 @@
-gnome-calendar (3.28.1-1ubuntu2mint1) tara; urgency=medium
+gnome-calendar (3.28.2-0ubuntu0.18.04.1) bionic; urgency=medium
 
-  * Add support for Cinnamon
+  * New upstream version (lp: #1768555)
+  * Remove the patch included in the new version
 
- -- Clement Lefebvre <root@linuxmint.com>  Mon, 14 May 2018 16:11:54 +0100
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 25 May 2018 13:29:11 +0200
 
 gnome-calendar (3.28.1-1ubuntu2) bionic; urgency=medium
 

@@ -696,17 +696,6 @@ spawn_goa_with_args (const gchar *action,
                      const gchar *arg)
 {
   GDBusProxy *proxy;
-  gchar *desktop_environment;
-
-  desktop_environment = getenv ("XDG_CURRENT_DESKTOP");
-  if (desktop_environment)
-    {
-      if (g_strcmp0 (desktop_environment, "X-Cinnamon") == 0 || g_strcmp0 (desktop_environment, "Cinnamon") == 0)
-        {
-          g_spawn_command_line_async ("cinnamon-settings online-accounts", NULL);
-          return;
-        }
-    }
 
   proxy = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SESSION,
                                          G_DBUS_PROXY_FLAGS_NONE,
