@@ -1,3 +1,10 @@
+gnome-calendar (3.28.2-0ubuntu0.18.04.1mint1) tessa; urgency=medium
+
+  * Add support for Cinnamon
+  * Fix: Set window icon name
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 28 Nov 2018 18:11:56 +0000
+
 gnome-calendar (3.28.2-0ubuntu0.18.04.1) bionic; urgency=medium
 
   * New upstream version (lp: #1768555)
